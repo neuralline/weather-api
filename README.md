@@ -8,7 +8,7 @@ the free plan only provide 120 request per day :(
     yarn install
     yarn start
 
-demo: https://weather-center.netlify.app/
+
 
 Probably the least developer friendly api ever I kept getting "You have exceeded the DAILY quota for API Requests on your current plan, BASIC. Upgrade your plan at..."
 
