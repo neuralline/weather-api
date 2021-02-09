@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Fetch } from '../custom-env'
-import { initialData, sampleResponse } from '../mock/weather'
+import { initialData } from '../mock/weather'
 
 export const fetchWeatherData: Fetch = async ({ lat, lon, url }) => {
   //@ts-ignore

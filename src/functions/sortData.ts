@@ -1,5 +1,3 @@
-import { Forecast } from '../custom-env'
-
 export const sortForecast = (forecast: any) => {
   const newForecast = forecast.data.map((res: any) => {
     return {
