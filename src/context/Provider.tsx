@@ -17,7 +17,7 @@ const storeReducers = (state: State, action: Action) => {
         ...state,
         weather: [...state.weather, { ...res }]
       }
-      console.log('state newState weather', newState)
+
       return newState
     } catch (err) {
       return state
@@ -25,9 +25,9 @@ const storeReducers = (state: State, action: Action) => {
   } else if (action.type === 'ADD_FORECAST') {
     try {
       const res = sortForecast(action.city)
-      console.log('sortForecast', res)
+
       const newState = { ...state, forecast: [...state.forecast, res] }
-      console.log('state newState forecast', newState)
+
       return newState
     } catch (err) {
       return state

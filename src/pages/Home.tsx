@@ -15,7 +15,6 @@ const Home = () => {
     (city: Weather) => city.city_name === id
   )
 
-  console.log('Home city', currentCity)
   useEffect(() => {
     if (!currentCity) {
       const { lat, lon } = cities[id]

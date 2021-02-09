@@ -13,11 +13,8 @@ const SingleEvent = () => {
   //const item: IEvent = items.find((item: IEvent) => item.id === id)
 
   const forecast = state.forecast.find((city: any) => city.city_name === id)
-  console.log(id)
-  console.log('cities[id]', cities[id])
+
   if (!forecast) {
-    const { lat, lon } = cities[id]
-    console.log('not found')
     /*    fetchWeatherData({ lon, lat, url }).then(response => {
       dispatch({
         type: 'ADD_FORECAST',
@@ -25,7 +22,7 @@ const SingleEvent = () => {
       })
     }) */
   }
-  console.log('forecast', forecast)
+
   useEffect(() => {
     const { lat, lon } = cities[id]
     fetchWeatherData({ lon, lat, url }).then(response => {
